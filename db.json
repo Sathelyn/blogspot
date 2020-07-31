@@ -3,10 +3,6 @@
         {
             "username":"user",
             "password":"user"
-        },
-        {
-            "username":"admin",
-            "password":"admin"
         }
     ],
     "posts":[
@@ -20,7 +16,7 @@
         },
         {
             "id": 2,
-            "title":"One of Best Countries in the World",
+            "title":"One of Best Country in the World",
             "description":"It is indeed proven that this country is one of the best in the world",
             "content":"The Philippines is a well-known tropical destination; after all, a lot of foreign travelers seek its crystal-clear beaches, picturesque landscapes and warm hospitality that is like no other! However, apart from this, it helps to know that the archipelago is also known for its unique and delicious food. (Philippines Food) <br><br> To start off, Philippines food or Filipino cuisine is a culmination of more than a hundred distinct local groups and tribes all throughout the country. From its Austronesian origins, it has since evolved to a mixed cuisine of American, Chinese, Indian, and Spanish influences that range from simple to complex dishes. One would even say that it is the ultimate fusion food that not only represents the different cultures all over the country but also of how “east meets west”. <br><br> With a rich culinary heritage and a wide range of food choices to pick from, it’s pretty hard to narrow down this list to 10 Philippines food only — but I can share with you here the top dishes (in no particular order) that everyone should NOT miss when visiting the country!",
             "image": "/images/3.jpg",
