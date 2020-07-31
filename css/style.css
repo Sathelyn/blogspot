@@ -215,10 +215,14 @@
 
   /* Footer */
   .footer {
+    margin-top: 30px;
     padding: 20px;
     text-align: center;
     background: #ddd;
-    margin-top: 20px;
+    left: 0;
+   bottom: 0;
+   width: 100%;
+    position: relative;
   }
   
   /* para sa responsive layout*/
@@ -296,7 +300,7 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 {
   float: right;
   margin-top: 150px;
-  margin-right: 370px;
+  margin-right: 395px;
   font-size: 30px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 3px;
@@ -305,9 +309,8 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 .about
 { 
   margin-left: 400px;
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
   text-align: justify;
 }
 .icons
@@ -317,10 +320,16 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
 }
 .about2
 { 
-  
-  font-size: 20px;
+  margin-left: 400px;
+  font-size: 15px;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 3px;
+  text-align: justify;
+}
+.about3
+{ 
+  margin-left: 0px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
   text-align: justify;
 }
 
@@ -331,7 +340,7 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   height: 200px;
   object-fit: cover;
 }
-            .blog-title{
+.blog-title{
   font-size: 25px;
 }
 
