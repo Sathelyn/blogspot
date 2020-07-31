@@ -1,4 +1,4 @@
-[
+{
 "accounts":[
     {
         "username":"user",
@@ -9,4 +9,4 @@
         "password":"admin"
     }
 ]
-]   
+}  
