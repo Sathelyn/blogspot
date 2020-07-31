@@ -15,7 +15,7 @@
   /* ----- navigation bar -----*/
   .navbar {
     background-color: #000;
-    opacity: 40%;
+    opacity: 90%;
     color: #fff;
     border-bottom: 1px solid rgba(255,255,255,0.2);
     width: 100%;
@@ -38,14 +38,13 @@
     line-height: inherit;
     padding: 0 30px;
     font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 5px;
-    margin-left: 250px;
+    margin-left: 100px;
   }
   .navbar a.navbar-brand span {
-    font-size: 28px;
-    font-weight: 700;
+    color: #f3f034ec;
+    font-weight: 800;
   }
   .navbar ul {
     float: left;
@@ -66,7 +65,7 @@
     padding: 0 30px;
   }
   .navbar ul li a:hover {
-    background-color: rgba(255,255,255,0.15);
+    background:#929018ec;
   }
   .navbar .navbar-toggler {
     display: none;
@@ -234,21 +233,21 @@
     box-shadow:inset 0px 1px 0px 0px #ffffff;
     background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
     background-color:#ffffff;
-    border-radius:6px;
+   
     border:1px solid #8f8f8f;
     display:inline-block;
     cursor:pointer;
     color:#666666;
     font-family:Arial;
-    font-size:17px;
+    font-size:15px;
     font-weight:bold;
-    padding:6px 18px;
+    padding:6px 14px;
     text-decoration:none;
     text-shadow:0px 1px 0px #ffffff;
   }
   .myButton:hover {
-    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color:#f6f6f6;
+
+    background:#f3f034ec;
   }
   .myButton:active {
     position:relative;
@@ -324,4 +323,28 @@ text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 3px;
   text-align: justify;
+}
+
+.card img{
+  width: 100%;
+  max-width: 100%;
+  max-height: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-title{
+  font-size: 25px;
+}
+
+.blog-description{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.blog-content{
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.blog-date{
+  font-size: 13px;
 }
