@@ -8,5 +8,25 @@
             "username":"admin",
             "password":"admin"
         }
+    ],
+    "post":[
+        {
+            "id": 1,
+            "title":"Title 1",
+            "description":"It's the sunriseAnd those brown eyes",
+            "content":"It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes"
+        },
+        {
+            "id": 2,
+            "title":"Title 2",
+            "description":"It's the sunriseAnd those brown eyes",
+            "content":"It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes"
+        },
+        {
+            "id": 3,
+            "title":"Title 3",
+            "description":"It's the sunriseAnd those brown eyes",
+            "content":"It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes"
+        }
     ]
 }
