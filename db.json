@@ -15,21 +15,24 @@
             "title":"Here in the City",
             "description":"Metromanila, the lively city.",
             "content":"Metro Manila is a bustling yet vibrant metropolis — and though a lot of locals and tourists alike will quickly advise you to escape the capital and explore the more popular and natural beauty of the Philippines, I assure you that there are still a key number of things to do in Manila that will make your stay or layover worthwhile. <br><br> Just look past the traffic and towering skyscrapers, and you’re sure to find a treasure trove of culture and fun activities. Such things are surely not limited to tourist spots, foodie and shopping destinations, lively nightlife, and even historic attractions that anyone will surely love! <br> <br> So without further ado, here are some of the best places and experiences that you might want to try when you want to explore more of Metro Manila. ",
-            "image": ""
+            "image": "/images/2.jpg",
+            "date": "June 29, 2020"
         },
         {
             "id": 2,
             "title":"One of Best Countries in the World",
             "description":"It is indeed proven that this country is one of the best in the world",
             "content":"The Philippines is a well-known tropical destination; after all, a lot of foreign travelers seek its crystal-clear beaches, picturesque landscapes and warm hospitality that is like no other! However, apart from this, it helps to know that the archipelago is also known for its unique and delicious food. (Philippines Food) <br><br> To start off, Philippines food or Filipino cuisine is a culmination of more than a hundred distinct local groups and tribes all throughout the country. From its Austronesian origins, it has since evolved to a mixed cuisine of American, Chinese, Indian, and Spanish influences that range from simple to complex dishes. One would even say that it is the ultimate fusion food that not only represents the different cultures all over the country but also of how “east meets west”. <br><br> With a rich culinary heritage and a wide range of food choices to pick from, it’s pretty hard to narrow down this list to 10 Philippines food only — but I can share with you here the top dishes (in no particular order) that everyone should NOT miss when visiting the country!",
-            "image": ""
+            "image": "/images/3.jpg",
+            "date": "March 2, 2020"
         },
         {
             "id": 3,
             "title":"My Beloved",
             "description":"It's the sunrise And those brown eyes",
             "content":"It's the sunrise And those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes It's the sunriseAnd those brown eyes",
-            "image": ""
+            "image": "/images/4.jpg",
+            "date": "March 1, 2020"
         }
     ]
 }

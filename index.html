@@ -37,36 +37,7 @@
     <div class="centered">Welcome to my Blog</div>
   </div>
   <div class="row" id="blog">
-    <div class="leftcolumn">
-      <div class="card">
-
-        <h2 class="blog-title">TITLE HEADING</h2>
-        <p class="blog-description">Blog description</p>
-        <span class="blog-date"><small>July 30, 2020</small></span>
-        <img src="/images/1.jpg" />
-        <p>Best part..</p>
-        <p class="blog-content">Oh, eyYou don't know, babeWhen you hold meAnd kiss me slowlyIt's the sweetest thingAnd it don't changeIf I had it <span id="dots">...</span>
-        </p>
-        <a href="#" class="myButton">Read more</a>
-      </div>
-
-
-      <div class="card">
-        <h2 class="title-heading">TITLE HEADING</h2>
-        <h5>Title description, July 30, 2020</h5>
-        <img src="/images/2.jpg" />
-        <p>Oh, eyYou don't know, babeWhen you hold meAnd kiss me slowlyIt's the sweetest thingAnd it don't changeIf I had it <span id="dots">...</span>
-        </p>
-        <a href="#" class="myButton">Read more</a>
-      </div>
-      <div class="card">
-        <h2 class="title-heading">TITLE HEADING</h2>
-        <h5>Title description, July 30, 2020</h5>
-        <img src="/images/3.jpg" />
-        <p>Oh, eyYou don't know, babeWhen you hold meAnd kiss me slowlyIt's the sweetest thingAnd it don't changeIf I had it <span id="dots">...</span>
-        </p>
-        <a href="#" class="myButton">Read more</a>
-      </div>
+    <div class="leftcolumn" id="featured_blogs">
     </div>
 
         <div class="rightcolumn">
@@ -101,6 +72,8 @@
 
 <script src="./js/scripts.js"></script>
 <script>
+
+   
 const queryString = window.location.search;
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
@@ -115,17 +88,45 @@ if(user){
 
 
 <script>
-  fetch('https://my-json-server.typicode.com/sathelyn/blogspot/accounts')
+function shorten(text, maxLength) {
+var ret = text;
+if (ret.length > maxLength) {
+ret = ret.substr(0,maxLength-3) + '…';
+}
+return ret;
+}
+
+  let blog = document.getElementById("featured_blogs");
+  fetch('https://my-json-server.typicode.com/sathelyn/blogspot/posts')
   .then((response) => {
     if (response.status !== 200) {
       console.log('Looks like there was a problem. Status Code: ' + response.status);
       return;
     }
     response.json().then((data) =>{
-      for(let i=0; i< data.length;i++ ){
-          // document.write(`${data[i].username} <br/>`);
+      data.map((posts)=>{
+        blog.classList.add("card");
+        blog.innerHTML +=`<div class="card">`;
+          blog.innerHTML += `<h2 class="blog-title" >${posts.title}</h2>`;
+          blog.innerHTML += `<p class="blog-description">${posts.description}</p>`;
+          blog.innerHTML += `<span class="blog-date"><small>${posts.date}</small></span>`;
+          blog.innerHTML += `<img src="${posts.image}" width="100%" height="200px" style="object-fit: cover"/>`;
+          blog.innerHTML += `<p>Best part..</p>`;
+          blog.innerHTML += `<p class="blog-content">${shorten(posts.content, 200)}<span id="dots">...</span></p>`;
+          blog.innerHTML += `<a href="blog.html/${posts.id}" class="myButton">Read more</a>`;
+        
+          blog.innerHTML += `</div>`;
           
-      }
+        });
+      
+
+        
+         
+  
+
+
+          
+
     });
   }
 )
