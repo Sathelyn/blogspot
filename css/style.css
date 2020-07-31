@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .content {
+    max-width: 1080px;
+    margin: auto;
+  }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: rgb(241, 241, 241);
+  }
+
+  /* ----- navigation bar -----*/
+  .navbar {
+    background-color: #000;
+    opacity: 40%;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar a.navbar-brand {
+    float: left;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-left: 250px;
+  }
+  .navbar a.navbar-brand span {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .navbar ul {
+    float: left;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+    margin-right: 300px;
+  
+  }
+  .navbar ul li{ 
+    display: inline-block;
+  }
+  .navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+  }
+  .navbar ul li a:hover {
+    background-color: rgba(255,255,255,0.15);
+  }
+  .navbar .navbar-toggler {
+    display: none;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar ul {
+      padding: 0 10px;
+    }
+    .navbar ul li a {
+      min-width: 100px;
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .navbar {
+      padding: 0;
+    }
+    .navbar ul {
+      width: 100%;
+      padding: 0;
+      background-color: rgba(0,0,0,0.9);
+
+      height: 100vh;
+      max-height: 0;
+      overflow: hidden;
+      transition: all ease-in-out 0.3s;
+    }
+    .navbar ul.open {
+      max-height: 100vh;
+    }
+    .navbar ul li {
+      width: 100%;
+    }
+    .navbar ul li a {
+      padding: 0;
+    }
+    .navbar .navbar-toggler {
+      display: block;
+      position: absolute;
+      height: 40px;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      color: #fff;
+      border: 3px solid #fff;
+      /* border: none; */
+      /* border-radius: 4px; */
+      outline: none;
+      padding: 0 5px;
+      cursor: pointer;
+    }
+    .navbar .navbar-toggler span,
+    .navbar .navbar-toggler span::before,
+    .navbar .navbar-toggler span::after {
+      display: block;
+      content: '';
+      background-color: #fff;
+      height: 3px;
+      width: 28px;
+      border-radius: 4px;
+      transition: all ease-in-out 0.3s;
+    }
+    .navbar .navbar-toggler span::before {
+      transform: translateY(-8px);
+    }
+    .navbar .navbar-toggler span::after {
+      transform: translateY(5px);
+    }
+    
+    .navbar .navbar-toggler.open-navbar-toggler span {
+      /* transform: rotate(90deg); */
+      background-color: transparent;
+      /* transform: scale(0.85) rotate(270deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::before {
+      transform: translateY(0px) rotate(45deg);
+      /* transform: translateY(0px) scale(0.75) rotate(45deg); */
+    }
+    .navbar .navbar-toggler.open-navbar-toggler span::after {
+      transform: translateY(-3px) rotate(-45deg);
+      /* transform: translateY(-3px) scale(0.75) rotate(-45deg); */
+    }
+  }
+/* para saImage Slider */
+
+  .mySlides 
+  {
+    
+    margin-top: 90px;
+    display:none;
+ 
+    height: 600px;
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+/*     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    .mySlides text_decor
+    {
+        font-family:'Roboto', sans-serif;
+        color: white;
+        font-size: 100px;
+        text-shadow: 10px 4px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+    }
+ */
+
+ #more {
+   display: none;
+  }
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+ 
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* para sa responsive layout*/
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  .myButton {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #8f8f8f;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:17px;
+    font-weight:bold;
+    padding:6px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+
+  
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+  .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 4px outset black;
+    outline-offset: 27px;
+      
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #000000;
+background: #FFFFFF;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+
+  }
+
+.img{
+  float: left;
+  margin-top: 150px;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.hname
+{
+  float: right;
+  margin-top: 150px;
+  margin-right: 370px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  
+}
+.about
+{ 
+  margin-left: 400px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  text-align: justify;
+}
+.icons
+{
+  display: inline-block;
+  text-decoration: none;
+}
+.about2
+{ 
+  
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 3px;
+  text-align: justify;
+}
